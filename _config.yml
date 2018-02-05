@@ -14,9 +14,10 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: 일상이 데드락
-email: fourmisz@eediom.com
+email: dead4lock@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Developer
+author: Deadlock
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: ""
@@ -24,10 +25,12 @@ github_username:  fourmisz
 
 # Build settings
 markdown: kramdown
-theme: minima
+theme: jekyll-theme-clean-blog
+paginate: 5
+paginate_path: "/posts/page:num/"
 plugins:
   - jekyll-feed
-
+  - jekyll-paginate
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
