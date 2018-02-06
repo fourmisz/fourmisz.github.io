@@ -53,4 +53,15 @@ layout: default
 
     </div>
   </div>
+
+  {% if page.comments %}
+  <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <hr>
+        
+        {% include comments.html %}
+
+      </div>
+  </div>
+  {% endif %}
 </div>
